@@ -1,0 +1,122 @@
+/* ==========================================================================
+LESS
+========================================================================== */
+
+@white: #fff;
+@black: #000;
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+
+.gradient (@startColor, @endColor) {
+    //background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.box-shadow (@string) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow:    @string;
+    box-shadow:         @string;
+}
+
+.opacity (@opacity: 0.5) {
+    -webkit-opacity:    @opacity;
+    -moz-opacity:       @opacity;
+    opacity:        @opacity;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition:    @transition;
+    -ms-transition:     @transition;
+    -o-transition:      @transition;
+    transition:         @transition;
+}
+
+.scale (@factor) {
+    -webkit-transform:  scale(@factor);
+    -moz-transform:      scale(@factor);
+    -ms-transform:       scale(@factor);
+    -o-transform:        scale(@factor);
+}
+
+/* for IE 7 */
+
+.inline-block () {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+/* ==========================================================================
+    GENERAL STYLES
+========================================================================== */
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: @white;
+}
+
+ul,
+p {
+    margin: 0;
+}
+
+input,
+button,
+textarea,
+input:active,
+textarea:active,
+button:active,
+:focus {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    zoom: 1; /* IE < 8 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.list-inline {
+    li {
+        .inline-block;
+    }
+}
+
+/* ==========================================================================
+    MAIN
+========================================================================== */
+

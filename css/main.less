@@ -4,6 +4,8 @@ LESS
 
 @white: #fff;
 @black: #000;
+@text: #383838;
+@red: #ed1c29;
 
 .border-radius (@radius: 5px) {
     -webkit-border-radius: @radius;
@@ -28,6 +30,12 @@ LESS
     -webkit-box-shadow: @string;
     -moz-box-shadow:    @string;
     box-shadow:         @string;
+}
+
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing:    @type;
+    box-sizing:         @type;
 }
 
 .opacity (@opacity: 0.5) {
@@ -67,7 +75,7 @@ html,
 body {
     font-family: Arial, sans-serif;
     height: 100%;
-    background-color: @white;
+    background-color: #eae9e9;
 }
 
 ul,
@@ -117,6 +125,111 @@ a:focus {
 }
 
 /* ==========================================================================
+    HEADER
+========================================================================== */
+
+.header {
+    width: 1010px;
+    margin: 0 auto;
+    padding: 20px 0 25px;
+}
+
+.logo {
+    float: left;
+    .inline-block;
+    width: 175px;
+    height: 51px;
+    background: url(../img/logo-main.png) no-repeat;
+}
+
+.hotline {
+    float: right;
+    width: 180px;
+    margin: 0;
+    color: #383838;
+    font-size: 16px;
+    text-align: right;
+
+    .time {
+        font-size: 11px;
+    }
+
+    .phone {
+        color: @red;
+        font-weight: bold;
+    }
+}
+
+/* ==========================================================================
     MAIN
 ========================================================================== */
 
+.main {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.banner {
+    padding: 30px;
+    padding-left: 35px;
+    background-color: #f2f2f2;
+    .box-sizing;
+}
+
+.banner-left {
+    float: left;
+
+    h2 {
+        width: 570px;
+        margin: 20px 0;
+        color: #234485;
+        font-size: 40px;
+        font-weight: normal;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    h4 {
+        margin: 0;
+        margin-top: 20px;
+        color: #393939;
+        font-size: 21px;
+        font-weight: normal;
+        font-style: italic;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    h4:before,
+    h4:after {
+        display: block;
+        content: "";
+        width: 585px;
+        height: 2px;
+        background: url(../img/separator-small.png) no-repeat;
+    }
+
+    h4:before {
+        margin-bottom: 15px;
+    }
+
+    h4:after {
+        margin-top: 20px;
+    }
+}
+
+.banner-right {
+    float: right;
+    position: relative;
+    height: 246px;
+    a {
+        display: block;
+        position: absolute;
+        right: 60px;
+        bottom: 9px;
+        width: 178px;
+        height: 33px; 
+        background: url(../img/btn-oform.png) no-repeat; 
+        text-indent: 100%; 
+        white-space: nowrap; 
+        overflow: hidden;
+    }
+}

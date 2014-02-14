@@ -76,6 +76,7 @@ body {
     height: 100%;
     background-color: #eae9e9;
     font-family: 'Exo 2', Arial, sans-serif;
+    color: #393939;
 }
 
 ul,
@@ -167,7 +168,8 @@ a:focus {
     MAIN
 ========================================================================== */
 
-.main {
+.main,
+.footer {
     width: 1070px;
     margin: 0 auto;
 }
@@ -193,7 +195,6 @@ a:focus {
     h4 {
         margin: 0;
         margin-top: 20px;
-        color: #393939;
         font-size: 21px;
         font-weight: normal;
         font-style: italic;
@@ -296,7 +297,6 @@ a:focus {
 
         p {
             margin: 0;
-            color: #393939;
             font-size: 14px;
         }
     }
@@ -393,5 +393,86 @@ a:focus {
 
 .before-order {
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
+    height: 180px;
+    h4 {
+        margin: 25px 0 15px;
+        color: #e4051c;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+
+    p,
+    li {
+        font-size: 14px;
+
+    }
+
+    ul {
+        padding-left: 15px;
+        list-style-type: none;
+
+        li {
+            margin: 5px 0;
+            color: #234485;
+        }
+
+        .bullet {
+            .inline-block;
+            width: 13px;
+            height: 16px;
+            margin-right: 8px;
+            background: url(../img/bullet.png);
+            vertical-align: middle;
+        }
+    }
+}
+
+/* ==========================================================================
+    FOOTER
+========================================================================== */
+
+.footer {
+    position: relative;
+    top: -104px;
+}
+
+.docs-tariffs {
+    margin-bottom: 30px;
+    a {
+        float: left;
+        width: 152px;
+        height: 22px;
+        line-height: 22px;
+        color: @white;
+        font-size: 12px;
+        background: url(../img/btn-violet.png) no-repeat;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.footer-info,
+.license {
+    float: left;
+    color: #070606;
+    font-size: 12px;
+}
+
+.footer-info {
+    float: left;
+    width: 700px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.license {
+    float: right;
+    width: 210px;
+    margin-top: 32px;
+    text-align: right;
 }

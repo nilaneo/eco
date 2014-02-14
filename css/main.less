@@ -385,6 +385,7 @@ a:focus {
     .inline-block;
     width: 178px;
     height: 33px;
+    border: none;
     background: url(../img/btn-want.png) no-repeat;
     text-indent: 100%; 
     white-space: nowrap; 
@@ -435,11 +436,11 @@ a:focus {
 
 .footer {
     position: relative;
-    top: -104px;
+    top: -102px;
 }
 
 .docs-tariffs {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     a {
         float: left;
         width: 152px;
@@ -452,6 +453,40 @@ a:focus {
         text-decoration: none;
         text-transform: uppercase;
     }
+}
+
+.docs,
+.tariffs {
+    display: none;
+    height: 210px;
+    padding: 15px;
+    background-color: @white;
+    background-color: rgba(255, 255, 255, .5);
+
+    h5 {
+        margin: 0;
+        margin-bottom: 15px;
+        color: #070606;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    p,
+    li {
+        color: #070606;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    ul {
+        padding-left: 30px;
+    }
+
+    a {
+        color: #ed1c29;
+        text-decoration: underline;
+    }
+
 }
 
 .footer-info,
@@ -475,4 +510,17 @@ a:focus {
     width: 210px;
     margin-top: 32px;
     text-align: right;
+}
+
+.ui-tooltip {
+    position: absolute;
+    left: 300px;
+    padding: 8px;
+    max-width: 300px;
+    .border-radius(10px);
+    z-index: 9999;
+    background-color: #5a2ebe;
+    -webkit-box-shadow: 0 0 5px #aaa;
+    box-shadow: 0 0 5px #aaa;
+    color: @white;
 }

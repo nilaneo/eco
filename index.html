@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Альфа-NFC</title>
+        <title>Альфа-ЕКО</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,9 +85,15 @@
                         3%** заощаджень на<br> покупках в “ЕКО-Маркеті” та<br> усі переваги звичайної<br> бонусної картки
                     </p>
                 </div>
-                <input type="text" class="inp inp-name" def="Ім'я" val="Ім'я">
-                <input type="text" class="inp inp-surname" def="Прізвище" val="Прізвище">
-                <a href="#0" class="btn btn-want">Я хочу</a>
+                <form method=''>
+                <input type="text" class="inp inp-name" def="Ім'я" value="Ім'я" id="firstname">
+                <input type="text" class="inp inp-surname" def="Прізвище" value="Прізвище" id="lastname">
+                <button type='submit' class="btn btn-want"></button>
+                <input class="partner" type="hidden" value="CorpSite">
+                <input class="resource" type="hidden" value="head">
+                <input class="additional_data" type="hidden" value="" >
+                <input type='hidden' name='productCode' id='productCode' value='CC_ECO'/>
+                </form>
                 <div class="before-order">
                     <h4>Шановний Kлієнте,</h4>
                     <p>Для проходження вашої заявки за прискореною процедурою схвалення, будь ласка, перед заповненням заявки підготуйте наступні дані:
@@ -102,9 +108,31 @@
             </div><!-- end of purse -->
         </div><!-- end of main -->
         <footer class="footer clearfix">
+            <div class="additional-info">
+                <div class="docs">
+                    <h5>Документи</h5>
+                    <p>Загальні умови кредитування:</p>
+                    <ul>
+                        <li>для продукту <a href="#0">"Максимум-готівка"</a></li>
+                        <li>для продукту <a href="#0">"Максимум"</a></li>
+                    </ul>
+                    <p>Інформація - <a href="#0">пам'ятка для власників кредитних карт</a></p>
+                    <p>Як читати <a href="#0">виписку по кредитній карті</a></p>
+                    <p>Інформація про спосіб <a href="#0">погашення заборгованості по кредитній карті</a></p>
+                    <p>Інформація про <a href="#0">добровільне страхування від нещасних випадків та добровільне страхування здоров'я на випадок хвороби</a></p>
+                </div>
+                <div class="tariffs">
+                    <h5>Тарифи</h5>
+                    <p>Тарифи на обслуговування кредитних карт: </p>
+                    <ul>
+                         <li>в рамках пакету <a href="#0">"Максимум-готівка"</a></li>
+                         <li>в рамках пакету <a href="#0">"Максимум"</a></li>
+                    </ul>
+                </div>
+            </div><!-- end of additional-info -->
             <div class="docs-tariffs clearfix">
-                <a href="#0">Документи</a>
-                <a href="#0">Тарифи</a>
+                <a href="#0" class="btn-docs">Документи</a>
+                <a href="#0" class="btn-tariffs">Тарифи</a>
             </div>
             <div class="footer-info">
                 <p>
@@ -120,5 +148,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jquery-ui.js"></script>
     </body>
 </html>

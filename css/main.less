@@ -73,9 +73,9 @@ LESS
 
 html,
 body {
-    font-family: Arial, sans-serif;
     height: 100%;
     background-color: #eae9e9;
+    font-family: 'Exo 2', Arial, sans-serif;
 }
 
 ul,
@@ -188,7 +188,6 @@ a:focus {
         color: #234485;
         font-size: 40px;
         font-weight: normal;
-        font-family: 'Exo 2', sans-serif;
     }
 
     h4 {
@@ -198,7 +197,6 @@ a:focus {
         font-size: 21px;
         font-weight: normal;
         font-style: italic;
-        font-family: 'Exo 2', sans-serif;
     }
 
     h4:before,
@@ -245,6 +243,47 @@ a:focus {
     background-position: center top;
 }
 
+.purse-inside {
+    position: absolute;
+    top: 85px;
+    left: 372px;
+    width: 250px;
+    text-align: center;
+
+    p {
+        margin: 0;
+        margin-top: 6px;
+        color: #234485;
+        font-size: 17px;
+        line-height: 17px;
+    }
+}
+
+.icon-arr-left,
+.icon-arr-right {
+    width: 19px;
+    height: 30px;
+    margin-top: 22px;
+    vertical-align: middle;
+}
+
+.icon-current {
+    width: 114px;
+    height: 110px;
+    background: url(../img/icon-percent.png) no-repeat;
+    vertical-align: middle;
+}
+
+.icon-arr-left {
+    background: url(../img/arrow-lefft.png);
+    margin-right: 15px;
+}
+
+.icon-arr-right {
+    background: url(../img/arrow-right.png);
+    margin-left: 15px;
+}
+
 .list-coins {
     padding-top: 100px;
     padding-left: 0;
@@ -259,7 +298,6 @@ a:focus {
             margin: 0;
             color: #393939;
             font-size: 14px;
-            font-family: 'Exo 2', sans-serif;
         }
     }
 
@@ -269,7 +307,7 @@ a:focus {
 }
 
 .icon {
-    display: block;
+    .inline-block;
 }
 
 .icon-1 {
@@ -322,13 +360,12 @@ a:focus {
 
 .inp {
     position: absolute;
-    top: 316px;
+    top: 315px;
     width: 160px;
     height: 18px;
     border: none;
     color: #393939;
     font-size: 14px;
-    font-family: 'Exo 2', sans-serif;
     line-height: 16px;
     background-color: transparent;
 }
@@ -339,6 +376,19 @@ a:focus {
 
 .inp-surname {
     left: 532px;
+}
+
+.btn-want {
+    position: absolute;
+    top: 360px;
+    left: 410px;
+    .inline-block;
+    width: 178px;
+    height: 33px;
+    background: url(../img/btn-want.png) no-repeat;
+    text-indent: 100%; 
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 .before-order {

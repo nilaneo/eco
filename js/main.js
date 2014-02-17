@@ -100,5 +100,15 @@ $(function() {
 			$(".btn-want").attr("title","");
 			return true;
 		}
-	}	
+	}
+
+	/*
+	*	SLIDER
+	*/
+
+	$(".icon-arr-right").on("click", function(e){
+		e.preventDefault();
+		var curPosition = $(".list-icons-big").css("left");
+		$(".list-icons-big").css("left", curPosition+100);
+	});
 });

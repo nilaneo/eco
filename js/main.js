@@ -28,7 +28,7 @@ $(function() {
 		$("." + currentTab).slideToggle("fast");
 		$(".btn-" + secondTab).removeClass("active");
 		$("." + secondTab).slideUp("fast");
-		$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+		$("html, body").animate({ scrollTop: $(document).height() }, 500);
 	};
 
 	$(".btn-docs").on("click", function(e) {
